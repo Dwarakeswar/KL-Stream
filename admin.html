@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KL-STEAM | Admin</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="brand">
+
+        <div class="brand-name">
+            KL-STEAM
+        </div>
+
+        <div class="brand-subtitle">
+            KL STREAM
+        </div>
+
+        
+
+    </div>
+
+
+    <nav>
+
+        <a href="admin.html">
+            Dashboard
+        </a>
+
+        <a href="#" onclick="logout()">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section>
+
+        <div class="hero">
+
+            <h1>
+                Admin Dashboard
+            </h1>
+
+            <p>
+                Manage the video content available
+                on KL-STEAM.
+            </p>
+
+        </div>
+
+
+        <!-- ADD VIDEO -->
+
+        <div class="admin-form">
+
+            <h2>
+                Add New Video
+            </h2>
+
+
+            <input
+                type="text"
+                id="videoTitle"
+                placeholder="Video title"
+            >
+
+
+            <select id="videoCategory">
+
+                <option value="">
+                    Select Category
+                </option>
+
+                <option value="Movies">
+                    Movies
+                </option>
+
+                <option value="Series">
+                    Series
+                </option>
+
+                <option value="Live">
+                    Live
+                </option>
+
+                <option value="Technology">
+                    Technology
+                </option>
+
+            </select>
+
+
+            <input
+                type="text"
+                id="videoUrl"
+                placeholder="YouTube Embed URL"
+            >
+
+
+            <input
+                type="text"
+                id="videoDescription"
+                placeholder="Short description"
+            >
+
+
+            <button onclick="addVideo()">
+                Add Video
+            </button>
+
+
+            <p id="adminMessage"></p>
+
+        </div>
+
+
+        <!-- CURRENT CONTENT -->
+
+        <h2>
+            Current Content
+        </h2>
+
+
+        <div id="adminVideoList"></div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>KL-STEAM | Admin Module</p>
+</footer>
+
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

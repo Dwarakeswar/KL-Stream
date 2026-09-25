@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KL-STEAM | Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="brand">
+        <div class="brand-name">KL-STEAM</div>
+        <div class="brand-subtitle">KL STREAM</div>
+    </div>
+</header>
+
+
+<main>
+
+    <!-- LOGIN -->
+
+    <section id="loginSection" class="auth-page">
+
+        <div class="auth-box">
+
+            <h2>Login</h2>
+
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Email"
+            >
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Password"
+            >
+
+          <button onclick="login()">
+    Login
+</button>
+
+<p>
+    <a href="#" onclick="forgotPassword()">
+        Forgot Password?
+    </a>
+</p>
+
+<p id="loginMessage"></p>
+
+<p id="resetMessage"></p>
+
+            <p>
+                New user?
+                <a href="#" onclick="showSignup()">
+                    Create an account
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SIGNUP -->
+
+    <section id="signupSection" class="auth-page hidden">
+
+        <div class="auth-box">
+
+            <h2>Signup</h2>
+
+            <input
+                type="text"
+                id="signupName"
+                placeholder="Full Name"
+            >
+
+            <input
+                type="email"
+                id="signupEmail"
+                placeholder="Email"
+            >
+
+            <input
+                type="password"
+                id="signupPassword"
+                placeholder="Password"
+            >
+
+            <button onclick="signup()">
+                Signup
+            </button>
+
+            <p id="signupMessage"></p>
+
+            <p>
+                Already have an account?
+                <a href="#" onclick="showLogin()">
+                    Login
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>KL-STEAM | SDC Project Review 1</p>
+</footer>
+
+
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

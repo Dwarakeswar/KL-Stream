@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KL-STEAM | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="brand">
+
+        <div class="brand-name">
+            KL-STEAM
+        </div>
+
+        <div class="brand-subtitle">
+            KL STREAM
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="home.html">
+            Home
+        </a>
+
+        <a href="watchlist.html">
+            My Watchlist
+        </a>
+
+        <a href="#" onclick="logout()">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <h1>
+            Welcome to KL-STEAM
+        </h1>
+
+        <p>
+            Watch movies, series, technology videos
+            and live content.
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH AND CATEGORY -->
+
+    <div class="top-bar">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search videos..."
+            oninput="displayVideos()"
+        >
+
+
+        <select
+            id="categoryFilter"
+            onchange="displayVideos()"
+        >
+
+            <option value="All">
+                All Categories
+            </option>
+
+            <option value="Movies">
+                Movies
+            </option>
+
+            <option value="Series">
+                Series
+            </option>
+
+            <option value="Live">
+                Live
+            </option>
+
+            <option value="Technology">
+                Technology
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- AVAILABLE CONTENT -->
+
+    <h2>
+        Available Content
+    </h2>
+
+    <div
+        id="videoList"
+        class="video-grid"
+    ></div>
+
+
+    <!-- RECOMMENDATIONS -->
+
+    <h2>
+        Recommended For You
+    </h2>
+
+    <div
+        id="recommendationList"
+        class="video-grid"
+    ></div>
+
+</main>
+
+
+<footer>
+    <p>KL-STEAM | User Module</p>
+</footer>
+
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
